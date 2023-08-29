@@ -1,5 +1,5 @@
 main {
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 .background {
@@ -7,8 +7,8 @@ main {
     background-position: center;
     background-size: cover;
     filter: grayscale(40%);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     z-index: -1;
 }
@@ -16,7 +16,7 @@ main {
 /* In order to make z-index work its necessary that the element has the position property set*/
 .package {
     width: 80%;
-    margin: 16px 0;
+    margin: 1rem 0;
     border: 4px solid #0e4f1f;
     border-left: none;
     position: relative;
@@ -27,16 +27,16 @@ main {
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 32px;
+    padding: 2rem;
 }
 
 .package__badge {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px;
-    padding: 8px;
-    font-size: 12px;
+    margin: 1.25rem;
+    padding: 0.5rem;
+    font-size: 0.75rem;
     color: white;
     background-color: #ff5454;
     z-index: 10;
@@ -53,9 +53,9 @@ main {
 }
 
 .package__info {
-    padding: 16px;
+    padding: 1rem;
     border: 1px solid #0e4f1f;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #0e4f1f;
     background: white;
 }

@@ -1,24 +1,19 @@
 #product-overview {
-    /*background: url("freedom.jpg");*/
-    background-image: url("images/freedom.jpg");
-    /*300px for width and 100px for height*/
-    /*background-size: 300px 100px;*/
-    background-repeat: no-repeat;
-    /*background-size: 100%;*/
-    background-size: cover;
-    /*background-position: 50% 50%;*/
-    background-position: left 10% bottom 20%;
-    background-origin: border-box;
-    /*Put the border outside the background*/
-    /*background-clip: padding-box;*/
-    /*Put the border inside the background*/
-    background-clip: border-box;
-    /*background-attachment: fixed;*/
-    width: 100%;
-    height: 528px;
-    padding: 10px;
-    margin-top: 42px;
-    /*border: 5px dashed red;*/
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box,
+    #ff1b68;
+    /* background-image: url("freedom.jpg");
+      background-size: cover;
+      background-position: left 10% bottom 20%; */
+    /* background-repeat: no-repeat;
+      background-origin: border-box;
+      background-clip: border-box; */
+    /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
+    /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
+    width: 100vw;
+    height: 30vh;
+    margin-top: 2.75rem;
+    /* border: 5px dashed red; */
     position: relative;
 }
 
@@ -29,17 +24,23 @@
 
 #product-overview h1 {
     color: white;
-    font-family: 'Anton', sans-serif;
+    font-family: "Anton", sans-serif;
     position: absolute;
     bottom: 5%;
     left: 3%;
 }
 
-.plan {
-    background-color: #d5ffdc;
+.plan__list {
+    width: 80%;
+    margin: auto;
     text-align: center;
-    padding: 16px;
-    margin: 8px;
+}
+
+.plan {
+    background: #d5ffdc;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
     display: inline-block;
     width: 30%;
     vertical-align: middle;
@@ -52,23 +53,23 @@
 }
 
 .plan__annotation {
-    background: rgb(255, 255, 255);
-    color: #0e4f1f;
-    padding: 0.5rem 0;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
+    background: white;
+    color: #19b84c;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 
 .plan__title {
     color: #0e4f1f;
 }
 
-.plan--highlighted .plan__title {
-    color: white;
+.plan__price {
+    color: #858585;
 }
 
-.plan__price {
-    color: rgb(133, 133, 133);
+.plan--highlighted .plan__title {
+    color: white;
 }
 
 .plan--highlighted .plan__price {
@@ -77,35 +78,35 @@
 
 .plan__features {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .plan__feature {
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 
 #key-features {
-    background-color: #ff1b68;
-    margin-top: 80px;
-    padding: 16px;
+    background: #ff1b68;
+    margin-top: 5rem;
+    padding: 1rem;
 }
 
 #key-features .section-title {
     color: white;
-    margin: 32px;
+    margin: 2rem;
 }
 
 .key-feature__list {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .key-feature {
     display: inline-block;
-    width: 33%;
-    text-align: center;
+    width: 30%;
     vertical-align: top;
 }
 
@@ -115,19 +116,17 @@
     height: 128px;
     border: 2px solid #424242;
     border-radius: 50%;
-    margin: 0 auto;
-    padding: 20px;
+    margin: auto;
+    padding: 1.5rem;
 }
 
 .key-feature__description {
     text-align: center;
     font-weight: bold;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
-.plan__list {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
+/* h1 {
+    font-family: sans-serif;
+} */
