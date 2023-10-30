@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("AnonymousPro-Regular.ttf") format("truetype");
+}
+
+/* Dont forget to add the font weight when setting the same font family */
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("AnonymousPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
 main {
     padding-top: 2rem;
 }
@@ -58,6 +70,9 @@ main {
     font-size: 1.25rem;
     color: #0e4f1f;
     background: white;
+    font-family: "AnonymousPro", sans-serif;
+    font-weight: bold;
+    /*font-style: italic;*/
 }
 
 .clearfix {
