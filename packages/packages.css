@@ -67,12 +67,24 @@ main {
 .package__info {
     padding: 1rem;
     border: 1px solid #0e4f1f;
-    font-size: 1.25rem;
+    /*font-size: 1.25rem;*/
     color: #0e4f1f;
     background: white;
     font-family: "AnonymousPro", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 1;
+    /*text-decoration: overline;*/
+    /*text-decoration: underline;*/
+    /*text-decoration: line-through;*/
+    /*text-decoration: line-through dotted;*/
+    /*text-decoration: underline double red;*/
+    /*text-decoration: overline wavy blue;*/
     /*font-style: italic;*/
+    text-shadow: 2px 2px 7px rgb(128, 128, 128);
+    /* First is font-size then font family... these are a must*/
+    /* */
+    /*font: italic small-caps 700 1.2rem "AnonymousPro", "sans-serif";*/
+    /* small caps is a font-variant property*/
 }
 
 .clearfix {
